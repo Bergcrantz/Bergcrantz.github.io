@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <!--<h1 class="page-heading">Posts (hmmm)</h1>-->
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class ="mouse1">
+    <img src="{{ "/pics/mus2.png" | prepend: site.baseurl }}" class="mouse1">
+  </div>
+
+  <p class="rss-subscribe">Prenumerera <a href="{{ "/feed.xml" | prepend: site.baseurl }}">med RSS</a></p>
+
+  <div class="pres">
+  <p>Välkommen</p>
+    <span>... till</span>
+    <span class="text">{{ site.description }}</span>
+  </div>
+
+
+</div>
