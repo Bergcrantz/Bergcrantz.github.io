@@ -46,40 +46,6 @@ img {
     vertical-align: middle;
 }
 
-@keyframes mouse1-animation {
-    0% {opacity: 0; top: 1000px; right: -200px}
-    100% {opacity: 1; top: 550; right: -100px}
-}
-
-////////////////// lägg bilderna i layout?
-
-.mouse1 {
-    animation-name: mouse1-animation;
-    animation-duration: 2s;
-    transition-duration: 5s;
-    position: fixed;
-    height: 400px;
-
-
-    top: 550px;
-
-
-    right: -100px;
-    z-index: 99;
-    opacity: 1;
-}
-
-// byt till logo
-
-.sign {
-    z-index: 99;
-    position: fixed;
-    width: 200px;
-    left: 30px;
-    padding: 0;
-    top: 35px;
-    opacity: 1;
-}
 
 
 /**
@@ -194,14 +160,12 @@ pre {
     max-width:         calc(800px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
+    /*
+    margin-top: $spacing-unit * 3;
+    */
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-    /*
-    background-color: lightgoldenrodyellow;
-    */
-    top: 50px;
-    margin-top: 100px;
 
 
     @include media-query($on-laptop) {
@@ -244,45 +208,4 @@ pre {
             fill: $grey-color;
         }
     }
-}
-
-//////////////////////////////////////
-
-
-#btn1Label {
-    cursor: pointer;
-    background-color: yellow;
-}
-
-#btn1 {
-    cursor: pointer;
-    display: none;
-}
-
-@keyframes example {
-    /* from {opacity: 0;}
-    to {opacity: 1;} */
-    0% {opacity: 0; top: -200px; }
-    100% {opacity: 1; top: 100px; }
-}
-
-//////////////////////////////////// ändra rätt nedan
-
-#box1 {
-    font-family: comic sans ms;
-    color: black;
-    font-size: 300pt;
-    margin: 0;
-    position: absolute;
-    transition-duration: 1s;
-    animation-name: example;
-    animation-duration: 10s;
-    display:none;
-    line-height: 1.7em;
-    left: 500px;
-    top: 100px;
-}
-
-#btn1:checked + #box1 {
-    display:block;
 }

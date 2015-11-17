@@ -95,23 +95,15 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    /*
     background-color: $text-color;
-    */
-    background-color: red;
-    opacity: .1;
+    opacity: $fade-light;
     height: 40px;
     z-index: 98;
 
-    /////////////////////////// texten ställs i mitten
-
-    vertical-align: middle;
-    text-align: center;
-
 }
 .site-footer:hover {
-    opacity: .5;
-    transition-duration: .5s;
+    opacity: $fade-medium;
+    transition-duration: $trans-standard;
 }
 
 /////////////////////////// färg till variabel. ta bort andra grejer.
@@ -311,4 +303,40 @@
             font-size: 18px;
         }
     }
+}
+
+@keyframes mouse-animation {
+    0% {opacity: 1; top: 1000px; right: -200px}
+    100% {opacity: 1; top: 550; right: -100px}
+}
+
+.mouse {
+    animation-name: mouse-animation;
+    animation-duration: 2s;
+    position: fixed;
+    height: 400px;
+
+
+    top: 550px;
+
+
+    right: -100px;
+    z-index: 99;
+    opacity: 1;
+}
+
+// byt till logo
+
+.sign {
+    z-index: 99;
+    position: fixed;
+    width: 200px;
+    left: 30px;
+    padding: 0;
+    top: 35px;
+}
+
+.sign:hover {
+    opacity: $fade-medium;
+    transition-duration: $trans-standard;
 }

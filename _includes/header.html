@@ -1,10 +1,8 @@
-<!--
-
 <header class="site-header">
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a href="{{ site.baseurl }}/"><img src="{{ "/pics/sign3.png" | prepend: site.baseurl }}" class="sign" alt="Start"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -15,23 +13,11 @@
         </svg>
       </a>
 
-      <label for="btn1" id="btn1Label">Länk ></label>
-      <input type="checkbox" id="btn1">
-      <div id="box1">
-        <a href="#">Text</a>
-      </div>
 
-      <div class="trigger">
-        {% for page in site.pages %}
-        {% if page.title %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
-      </div>
     </nav>
 
   </div>
 
 </header>
 
--->
+
