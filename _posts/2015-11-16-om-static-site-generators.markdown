@@ -6,7 +6,7 @@ categories: uppgiften
 comments: true
 ---
 
-Static site generators påminner till viss del om CSS preprocessors. Det finns flera html-filer som körs genom en static site generator och resultatet blir i en fil, en statisk sida, som länkar till de olika filerna. I mitt fall sker mycket av detta i filen default.html som fungerar som ett nav för flera andra filer.
+Static site generators påminner till viss del om CSS preprocessors. Ett gäng html-filer körs genom en static site generator och resultatet blir en fil, en statisk sida, som länkar till de olika filerna. I mitt fall sker mycket av detta i filen default.html.
 
 Precis som när det gäller scss:en har jag behållit mycket av upplägget från den ursprungliga mallen. Det har, tror jag, bara tillkommit en enda ny fil under projekttiden: comments.html, som används till Disqus-kommentarer och länkas in i post.html.
 

@@ -10,7 +10,7 @@ robots.tct är en fil som används för att prata med sökrobotar. Det är den f
 
 I min robots.txt har jag skrivit följande
 
-- user-agent: *
-- Disallow: /
+user-agent: *
+Disallow: /
 
-vilket innebär att sökrobotar inte kommer att returnera någonting alls från min webbplats. Jag har ännu bestämt mig för om jag vill använda sidan "på riktigt" och i vilket fall som helst så vill jag vara lite hemligt nu i början.
+vilket innebär att sökrobotar inte kommer att returnera något alls från min webbplats. Jag har ännu bestämt mig för om jag vill använda sidan "på riktigt" och i vilket fall som helst så vill jag vara lite hemligt nu i början.
