@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Om SCSS"
+date:   2015-11-12 19:27:42
+categories: uppgiften
+comments: true
+---
+
+I ett försök att spara tid (ej framgångsrikt) valde jag att inte göra en ny webbplats från grunden utan istället utgå från de filer och den kod som fanns redan från början. Det innebär att filupplägg och mycket av koden är identiskt med hur det såg ut i den ursprungliga mallen. Det finns fortfarande tre partials _base, _layout_ och _syntax-highlighting, och även bland variablerna i main-filen ser man stora likheter med hur det var från början.
+
+Är det för få partials i förhållande till mängden scss-kod? Kanske. Jag har inte använt mig av scss preprocessing tidigare och är lite osäker på hur man brukar göra. Men jag kan ju konstatera att det är ganska mycket kod i både _base och _layout.
+
+Kanske är bilder, i detta fallet mouse.png och logo.png, två element på sidan som hade passat bättre i en separat partial?
+
+Jag har inte använt mig av några mixins i koden. Så smart blev jag aldrig. Men det har tillkommit en del variabler som jag tror att jag använder någorlunda vettigt.
+
+Det finns också kod som har blivit obsolet under arbetets gång eller som var obsolet redan från början. En del av denna kod, alldeles för mycket, har jag fortfarande inte hunnit städa bort från de olika filerna. Också det en konsekvens av jag kom igång så sent med uppgiften.
+
+Kort sagt finns det fortfarande mycket att göra i min scss-kod. Organisationen kan bli bättre, koden kan bli torrare och mer sammansatt (och mer städad) och många måttangivelser går säkert att ersätta med smarta beräkningar.
+
+Vilket också är exempel på fördelar som scss har, eller kan ha, mot vanlig css.

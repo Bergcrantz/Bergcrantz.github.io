@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Om robots.txt"
+date:   2015-11-17 19:27:42
+categories: uppgiften
+comments: true
+---
+
+robots.tct är en fil som används för att prata med sökrobotar. Det är den första filen som sökrobotar läser av innan de bestämmer sig för om de ska genomsöka en sida.
+
+I min robots.txt har jag skrivit följande
+
+- user-agent: *
+- Disallow: /
+
+vilket innebär att sökrobotar inte kommer att returnera någonting alls från min webbplats. Jag har ännu bestämt mig för om jag vill använda sidan "på riktigt" och i vilket fall som helst så vill jag vara lite hemligt nu i början.

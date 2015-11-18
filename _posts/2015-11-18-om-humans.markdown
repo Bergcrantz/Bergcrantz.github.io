@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Om humans.txt"
+date:   2015-11-17 19:27:42
+categories: uppgiften
+comments: true
+---
+
+humans.txt är en fil som används för att tala om vilka personer som har bidragit till arbetet med en webbplats. Den ligger liksom robots.txt i root-mappen för webbplatsen.
+
+Säkert borde det finnas ett stort antal personer i min egen humans.txt, med tanke på att det mesta som finns på webbplatsen (open graph, Disqus, etc) är sådant som jag har hämtat utifrån. Inte ens den övergripande strukturen har jag gjort själv. Men nu är det kort om tid till deadline och jag nöjer mig med mitt eget namn.

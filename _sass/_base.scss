@@ -1,3 +1,5 @@
+//// links-färgerna
+
 /**
  * Reset some basic elements
  */
@@ -27,15 +29,15 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+
+h1, h3, h4, h5, h6,
+blockquote, pre,
+dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
 
 
-//////////////////////////////////////////////////////// max-width: 100% (i förhållande till vad?
 
 /**
  * Images
@@ -66,10 +68,14 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+    padding-right: $spacing-unit / 2;
 
 }
 
 li {
+    display: inline;
+    list-style: none;
+
     > ul,
     > ol {
          margin-bottom: 0;
@@ -91,15 +97,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: darken($brand-color1, 15%);
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
+        color: red;
     }
 }
 
@@ -159,9 +161,7 @@ pre {
     max-width:         calc(800px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
-    /*
-    margin-top: $spacing-unit * 3;
-    */
+    margin-top: $spacing-unit * 1.5;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
