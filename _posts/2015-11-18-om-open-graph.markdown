@@ -6,5 +6,5 @@ categories: uppgiften
 comments: true
 ---
 
-Open graph är nog det som har varit svårast för mig att komma underfund med, kanske för att informationen på pgp.me är så tillkrånglad (vad är en social graph? vad är ett rich object?). Men det används vid delning av ens webbplats i sociala medier.
+Open graph används vid delning av webbplatsen i sociala medier. Det gör det möjligt att ange vilken information som synas när webbplatsen delas på t ex Facebook.
 

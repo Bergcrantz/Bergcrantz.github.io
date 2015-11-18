@@ -17,11 +17,12 @@ Låt mig börja med att säga att jag inte har hunnit färdigt med hemsidan. Det
 
 Bland det som jag planerade att göra men inte har hunnit:
 
-* Responsiv design (funkar delvis)
+* Responsiv design (påbörjad)
 * Det finns viss animation på sidan som inte funkar optimalt. Eftersom animationen påverkar en sidas längd kan det hända att sidan hackar åt vänster när scrollningen försvinner.
-* Den publicerade sidan skiljer sig utseendemässigt från offline-versionen jag har arbetat med. Konstigt, tycker jag, med tanke på att källkoden är identisk och det är samma dator och webbläsare. Detta är det i mina ögon allvarligaste problemet.
-* Koden är slarvig och dålig. Det finns kod som inte används och kod som kan användas bättre.
+* Den publicerade sidan skiljer sig utseendemässigt från offline-versionen jag har arbetat med. Dimensioner och marginaler är inte helt riktigt hundra. Konstigt, tycker jag, med tanke på att källkoden är identisk och det är samma dator och webbläsare. Detta är det i mina ögon allvarligaste problemet som jag ännu inte har hunnit lösa.
+* Koden är slarvig och dålig. Det finns både kod som inte används och kod som kan användas bättre.
 * Animationerna funkar inte i alla webbläsare. Jag har en aning om hur jag ska fixa det.
+* Trigger-menyn triggas men används inte till något. Jag lät den dock vara kvar tills vidare.
 * Det ska vara fler möss
 
-Med mera, mer mera.
+Mm, mm.
