@@ -9,7 +9,7 @@
 $base-font-family: times, Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$new-font-size:  $base-font-size * 1.5;
+$large-font-size:  $base-font-size * 1.5;
 
 $base-line-height: 1.5;
 
@@ -27,8 +27,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$fade-medium:      .5;
-$fade-light:       .1;
+$opacity-medium:      .5;
+$opacity-light:       .1;
 
 $anim-standard:    2s;
 $trans-standard:   .5s;

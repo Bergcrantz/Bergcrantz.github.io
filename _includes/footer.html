@@ -1,28 +1,8 @@
 <footer class="site-footer">
 
-  <!--<div class="footer-content">-->
-
-  <!--<div class="wrapper">-->
-
-  ////////////////////////////// Om:
-  <!--
-  <div class="trigger">
-    {% for page in site.pages %}
-    {% if page.title %}
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-    {% endif %}
-    {% endfor %}
-  </div>
--->
-
-    <!--<h2 class="footer-heading">{{ site.title }}</h2>-->
-    <!--<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>-->
-
-
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <!--<li>{{ site.title }}</li>-->
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
@@ -64,20 +44,15 @@
 
       <div class="footer-col  footer-col-3">
 
-        <div class ="mouse1">
-          <img src="{{ "/pics/mouse.png" | prepend: site.baseurl }}" class="mouse">
+        <div class="trigger">
+          {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+          {% endfor %}
         </div>
-
-        <!--<div class ="mouse1">
-        <img src="{{ "/pics/mus2.png" | prepend: site.baseurl }}" class="mouse1">
-        </div>-->
-
-        <!--<p class="text">{{ site.description }}</p>-->
 
       </div>
     </div>
 
-  <!--</div>-->
-
-  <!--</div>-->
 </footer>

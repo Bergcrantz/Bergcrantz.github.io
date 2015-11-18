@@ -2,9 +2,6 @@
  * Site header
  */
 .site-header {
-    /*
-    border-top: 20px solid $grey-color-dark;
-*/
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -96,29 +93,19 @@
     bottom: 0;
     width: 100%;
     background-color: $text-color;
-    opacity: $fade-light;
+    opacity: $opacity-light;
+    /*
     height: 40px;
+    */
     z-index: 98;
 
 }
 .site-footer:hover {
-    opacity: $fade-medium;
+    opacity: $opacity-medium;
     transition-duration: $trans-standard;
 }
 
-/////////////////////////// färg till variabel. ta bort andra grejer.
-/*
-.footer-content {
-    opacity: .9;
-    background: rosybrown;
-    height: 100px;
-    margin: auto;
-    width: 1100px;
-    vertical-align: middle;
 
-
-}
-*/
 /////////////////////////////////////////Behöver jag footer-heading?
 
 .footer-heading {
@@ -138,33 +125,37 @@
     /*
     font-size: 15px;
     */
+    /*
     font-size: 25px;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
     position: relative;
     margin-top: -$spacing-unit - 2px;
+*/
 }
 
 ///////////////////////////////////////////////////////////////////////////
 
 .footer-col {
     float: left;
-
+    /*
     margin-bottom: $spacing-unit / 2;
-
+*/
+    padding-top: 5px;
     padding-left: $spacing-unit / 2;
 
 }
-
+// 35, 45, 20
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(17% - (#{$spacing-unit} / 2));
+    width:         calc(17% - (#{$spacing-unit} / 2));
+    margin-left: $spacing-unit;
 }
 
 .footer-col-2 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(15% - (#{$spacing-unit} / 2));
+    width:         calc(15% - (#{$spacing-unit} / 2));
 
 }
 
@@ -253,8 +244,10 @@
     top: 70px;
     right: 20px;
     width: 500px;
-    font-size: $base-font-size * 1.5;
+    font-size: $large-font-size;
     color: $grey-color;
+    color: blue;
+
 }
 
 /**
@@ -306,7 +299,7 @@
 }
 
 @keyframes mouse-animation {
-    0% {opacity: 1; top: 1000px; right: -200px}
+    0% {opacity: 0; top: 1000px; right: -200px}
     100% {opacity: 1; top: 550; right: -100px}
 }
 
@@ -325,18 +318,19 @@
     opacity: 1;
 }
 
-// byt till logo
 
-.sign {
+.logo {
     z-index: 99;
     position: fixed;
     width: 200px;
-    left: 30px;
+    left: 0;
     padding: 0;
-    top: 35px;
+    top: 0;
+    padding-top: $spacing-unit;
+    padding-left: $spacing-unit;
 }
 
-.sign:hover {
-    opacity: $fade-medium;
+.logo:hover {
+    opacity: $opacity-medium;
     transition-duration: $trans-standard;
 }

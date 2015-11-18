@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Om
+title: Om Jacob Bergcrantz
 permalink: /om/
 ---
 

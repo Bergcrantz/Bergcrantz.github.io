@@ -2,7 +2,7 @@
 title: Bergcrantz.se
 email: jb223jv@student.lnu.se
 description: > # this means to ignore newlines until "baseurl:"
-  Jacob Bercrantz officiella hemsida. Här hittar du nyheter om Jacobs texter och annat som han arbetar på.
+  Jacob Bercrantz officiella hemsida. Här hittar du nyheter om mina texter, illustrationer och annat som jag håller på med.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bergcrantz.github.io" # the base hostname & protocol for your site
 twitter_username:
