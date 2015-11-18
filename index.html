@@ -24,7 +24,11 @@ layout: default
   <h3>Välkommen</h3>
     <span>... till</span>
     <span class="text">{{ site.description }}</span>
-    <p><br>Läs mer.</p>
+    {% for page in site.pages %}
+    {% if page.title %}
+    <p class="special"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">Läs mer.</a></p>
+    {% endif %}
+    {% endfor %}
   </div>
 
   <div class ="mouse1">
