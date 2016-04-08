@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Personal desktop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+<template id="geoQuizTemplate">
+    <div class="geoDiv flex">
+        <h3 class="geoHeader">Kapitel</h3>
+        <div class="categories">
+            <ol></ol>
+            <template>
+                <li><a href="#"></a></li>
+            </template>
+        </div>
+        <form class="geoForm removed">
+            <template>
+                <input class="geoTextField" type="text" placeholder="            ">
+            </template>
+            <button class="submitButton" type="submit">Svara</button>
+        </form>
+        <div class="geoResults">
+            <template>
+                <table>
+                    <tr>
+                        <td>Namn</td>
+                        <td>Poäng</td>
+                        <td>Procent</td>
+                        <td>Betyg</td>
+                    </tr>
+                </table>
+            </template>
+        </div>
+    </div>
+    <div class="facit notebookSimple removed">
+        <p class="correctAnswer"></p>
+        <template>
+            <div class="noteToSelfContainer"><textarea class="noteToSelf" placeholder="Anteckningar sparas till dess att du rensar historiken i webbläsaren."></textarea></div>
+        </template>
+    </div>
+</template>
+
+
+<template id="memoryTemplate">
+    <div class="memoryContent flex">
+        <div class="bricks removed">
+            <template>
+                <img class="brick" role="button" tabindex="0" src="memory/0.png" alt="A memory brick">
+            </template>
+        </div>
+    </div>
+</template>
+
+<div id="windowContainer"></div>
+
+<template id="windowTemplate">
+    <div class="windowFrame zzzZzz notebook">
+        <div class="windowTop">
+            <img class="icon" src="">
+            <img class="exit" src="exitButton.png">
+        </div>
+        <div class="windowInside flex">
+            <h3 class="windowHeader">test</h3>
+        </div>
+    </div>
+</template>
+
+<template id="templateList">
+    <ol>
+        <li></li>
+    </ol>
+</template>
+
+<template id="quizTemplate">
+    <div class="quizContent flex">
+        <h3 class="quizHeader">Kapitel</h3>
+        <div class="categories">
+            <ol></ol>
+            <template id="categoriesTemplate">
+                <li><a href="#"></a></li>
+            </template>
+        </div>
+        <form class="quizForm removed">
+            <input class="textField" type="text">
+            <button class="submitButton" type="submit">Ok!</button>
+        </form>
+        <p class="hints"></p>
+        <div class="quizPoints">
+            <template>
+                <p class="point">|</p>
+            </template>
+        </div>
+    </div>
+</template>
+
+<template id="hangmanTemplate">
+    <p class="word"></p>
+    <form id="hangmanForm" class="flex">
+        <input id="hangmanTextField" type="text" maxlength="1">
+        <button id="hangmanSubmitButton" type="submit">Ok!</button>
+    </form>
+</template>
+
+<template id="formTemplate">
+    <form class="formGeneral flex">
+        <h3 class="formHeader">Enter name</h3>
+        <input class="textField" type="text">
+        <button class="submitButton" type="submit">Ok!</button>
+    </form>
+</template>
+
+<div id="chatContainer"></div>
+
+<template id="chatTemplate">
+    <div class="chatContent">
+        <div class="hideScrollBar">
+            <div class="messages">
+                <template id="messageTemplate">
+                    <div class="message">
+                        <p class="author"></p>
+                        <p class="text"></p>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="chatTextAreaContainer"><textarea class="chatTextArea" placeholder="Skriv här"></textarea></div>
+        <div class="userInfo"><p></p><p> För att byta namn, skriv /namn dittnyanamn i textfältet eller klicka <a href="#">här</a>.</p></div>
+    </div>
+</template>
+
+<template id="waterdropTemplate">
+    <div class="waterdrop"></div>
+</template>
+
+<template id="navWindowTemplate">
+    <div class="windowFrame notebook">
+        <div class="windowTop">
+            <img class="icon" src="">
+        </div>
+    </div>
+</template>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
