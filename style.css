@@ -1,0 +1,566 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    color: #000000;
+    background-color: #a4adb5;
+    font-family: comic sans ms;
+    font-size: 11pt;
+    /*background-image: url("skryllebg.png");*/
+    background-image: url("bg.jpg");
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+body form {
+    padding-bottom: 30px;
+}
+
+
+/* Global nav */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    bottom: -5px;
+    margin-right:60px;
+}
+
+nav ul li:hover {
+    bottom: 20px;
+    transition: .4s;
+}
+
+.navWindow {
+    height: 100px;
+    width: 600px;
+    transform: rotate(5deg);
+}
+
+/* windowContainer */
+
+#windowContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.testy {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Basic window */
+
+.windowFrame {
+    position: absolute;
+    border-radius: 20px;
+}
+
+.windowTop {
+    position: relative;
+    height: 1.5em;
+}
+
+.icon {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.exit {
+    position: relative;
+    float: right;
+    top: 5px;
+    right: 5px;
+}
+
+.exit:hover {
+    cursor: pointer;
+}
+
+.windowInside {
+    border-radius: 20px;
+}
+
+
+.quizHeader, .formHeader {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 2em;
+}
+
+.windowHeader {
+    padding: 0;
+    margin: -1px 0 0 0;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+
+/* Genera form */
+
+.formGeneral {
+    height: 200px;
+    width: 650px;
+}
+
+.textField {
+    width: 150px;
+    outline: none;
+
+    margin: auto;
+    margin-top: -1.2em;
+    height: 1.2em;
+
+    border: none;
+
+    background-color: transparent;
+    background-image:
+    linear-gradient(blue .1em, transparent .2em);
+    background-size: 100% 1.5em;
+    line-height: 1.5em;
+    background-position: 0 1.2em;
+
+    font-family: comic sans ms;
+    font-size: 15pt;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.submitButton {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    background: none;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+
+    font-family: comic sans ms;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.submitButton:hover {
+    text-decoration: underline;
+}
+
+/* Shared functionality/Desktop */
+
+.flex {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* notebook är inspirerad av: http://lea.verou.me/css3patterns/#lined-paper */
+
+.notebook {
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 39px, #abced4 39px, #abced4 41px, transparent 41px),
+    linear-gradient(#eee 1px, transparent 2px);
+    background-size: 100% 25px;
+}
+
+.notebookSimple {
+    background-color: #fff;
+    background-image: linear-gradient(#eee 1px, transparent 2px);
+    background-size: 100% 25px;
+}
+
+.noSelection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Effects and animations */
+
+.hidden {
+    opacity: 0;
+}
+
+.removed {
+    display: none;
+}
+
+.clicked {
+    opacity: .9;
+}
+
+.enlarge {
+    animation-name: enlarge;
+    animation-duration: 2s;
+}
+
+@keyframes enlarge {
+    0%   {opacity: 0; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
+    25% {opacity: 1;}
+    50% {-webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3);}
+    100% {-webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3);}
+}
+
+.waterdrop {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    animation: waterdrop;
+    animation-duration: 3s;
+    opacity: 0;
+    /*z-index: 0;*/
+}
+
+@keyframes waterdrop {
+    0%   {opacity: .7;}
+    100% {opacity: 0; -webkit-transform: scale(6); -ms-transform: scale(3); transform: scale(3);}
+}
+
+
+/* Memory */
+
+.memoryContent {
+    padding-bottom: 20px;
+    max-width: 650px;
+}
+
+.memoryContent ol {
+    width: 650px;
+    height: 250px;
+    text-align: center;
+}
+
+.bricks {
+    width: 650px;
+    height: 650px;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.brick {
+    width: 150px;
+    cursor: pointer;
+}
+
+
+/* Chat */
+
+.chatContent {
+    height: 30em;
+    width: 600px;
+}
+
+.chatTextArea {
+    position: absolute;
+    bottom: 5px;
+
+    width: 500px;
+    height: 3.3em;
+
+    font-family: comic sans ms;
+    font-size: 15pt;
+    font-weight: bold;
+    line-height: 1.1em;
+    outline: none;
+
+    background: none;
+    border: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.chatTextAreaContainer {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+
+    width: 500px;
+    height: 3.5em;
+
+    background-color: #fff;
+    background-image:
+    linear-gradient(blue .1em, transparent .2em);
+    background-size: 100% 25px;
+    line-height: 1.5em;
+}
+
+.hideScrollBar {
+    position: absolute;
+    left: 60px;
+    top: 75px;
+
+    width: 500px;
+    height: 308px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.messages {
+    width: 600px;
+
+    background: none;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.chatContent p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.chatContent a {
+    text-decoration: none;
+    weight: bold;
+    color: black;
+}
+
+.myMessage {
+    color: green;
+}
+
+.systemMessage {
+    color: grey;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.userInfo {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+
+    width: 500px;
+
+    font-size: 8pt;
+}
+
+.userInfo p {
+    display: inline;
+}
+
+
+/* GeoQuiz */
+
+.geoDiv {
+    width: 800px;
+    min-height: 200px;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 0 20px;
+    z-index: 10;
+}
+
+.categories {
+    width: 300px;
+    margin: -90px auto auto auto;
+    list-style: none;
+
+    font-size: 15pt;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+
+    cursor: pointer;
+}
+
+.categories li:hover {
+    color: orange;
+    transition: .2s;
+}
+
+.geoHeader {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+    padding: 1.9em;
+}
+
+.geoDiv ol {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: -50px;
+    width: 500px;
+    list-style: none;
+    text-align: left;
+}
+
+.geoDiv li {
+    padding: 0;
+}
+
+.geoTextField {
+    width: 100px;
+
+    margin: auto;
+    margin-top: -1.2em;
+    height: 1.2em;
+    overflow: hidden;
+
+    border: none;
+
+    background-color: transparent;
+    line-height: 1.5em;
+
+    background-position: 0 1.2em;
+
+    font-family: comic sans ms;
+    font-size: 15pt;
+    font-weight: bold;
+    color: black;
+    border-bottom: solid;
+    border-color: blue;
+}
+
+.geoTextField:hover {
+    transition: .5s;
+    width: 225px;
+}
+
+.geoForm {
+    max-width: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.expandedForm {
+    width: 400px;
+    height: 400px;
+}
+
+.noteToSelfContainer {
+    position: absolute;
+    bottom: 10px;
+
+    margin: 0;
+    margin-left: 30px;
+    width: 740px;
+    height: 90px;
+
+    background-color: #fff;
+    background-image:
+    linear-gradient(blue 1px, transparent 2px);
+    background-size: 100% 25px;
+    line-height: 1.5em;
+}
+
+.noteToSelf {
+    position: absolute;
+    bottom: 12px;
+
+    overflow: hidden;
+
+    width: 740px;
+    height: 100px;
+
+    border: none;
+    resize: none;
+
+    background: none;
+
+    line-height: 25px;
+
+    font-family: comic sans ms;
+    font-size: 15pt;
+    font-weight: bold;
+    outline: none;
+}
+
+.correctAnswer {
+    position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 750px;
+
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 25px;
+    font-style: italic;
+    color: blue;
+
+    text-align: justify;
+    z-index: -1;
+}
+
+.facit {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+
+    width: 800px;
+    height: 200px;
+
+    border-radius: 20px 20px 20px 20px;
+    z-index: -2;
+    transition: 1s;
+}
+
+table {
+    padding-bottom: 20px;
+}
+
+table td {
+    min-width: 100px;
+}
+
+/* I den andra varianten av quizzen: */
+
+.facit2 {
+    height: 250px;
+}
+
+.correctAnswer2 {
+    width: 740px;
+    bottom: 130px;
+    padding-left: 30px;
+    color: #008000;
+}
+
+
+/* Results */
+
+ol {
+    padding-top: 35px;
+}
